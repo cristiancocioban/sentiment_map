@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legend_Theme__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Legend Theme</label>
+    <referenceTo>Legend_Theme__mdt</referenceTo>
+    <relationshipLabel>Legend Items</relationshipLabel>
+    <relationshipName>Legend_Items</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

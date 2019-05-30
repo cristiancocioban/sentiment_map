@@ -1,0 +1,6 @@
+<aura:event type="APPLICATION">
+    <aura:attribute name="relationshipStatus" type="String"/>
+    <aura:attribute name="diversityCategory" type="String"/>
+    <aura:attribute name="customerPriority" type="String"/>
+    <aura:attribute name="user" type="String"/>
+</aura:event>

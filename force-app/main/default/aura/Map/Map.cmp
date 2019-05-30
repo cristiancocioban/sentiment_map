@@ -1,0 +1,47 @@
+<aura:component controller="MapController" access="global">  
+    
+	<aura:registerEvent name="statesDataLoadedEvent" type="c:StatesDataLoaded"/>
+    <aura:handler name="statesDataLoadedEvent" event="c:StatesDataLoaded" action="{!c.handleStatesDataLoadedEvent}"/>
+    
+    <aura:registerEvent name="mapComponentStateSelectedEvent" type="c:MapComponentStateSelectedEventType"/>
+    <aura:handler name="mapComponentStateSelectedEvent" event="c:MapComponentStateSelectedEventType" action="{!c.handleMapComponentStateSelectedEvent}"/>
+    
+    <aura:registerEvent name="mapStateSelectedEvent" type="c:MapStateSelectedEventType"/>  
+      
+    <aura:handler event="c:AccountItemSelectedEventType" action="{!c.handleAccountItemSelectedEvent}"/>
+	<aura:handler event="c:MapWorldRegionEventType" action="{!c.handleMapWorldRegionEvent}"/>    
+
+
+	<aura:handler event="c:SentimentSelectedEventType" action="{!c.handleSentimentSelectedEvent}"/>
+
+    <aura:attribute name="map" type="Object"/>
+    <aura:attribute name="markers" type="Object"/>
+    <aura:attribute name="selectedMarker" type="Object"/>
+    <aura:attribute name="selectedFeature" type="Object"/>
+    <aura:attribute name="allMarkersRegistry" type="Object"/>
+    <aura:attribute name="markersRegistry" type="Object"/>
+    <aura:attribute name="legend" type="Object"/>
+    <aura:attribute name="info" type="Object"/>
+    <aura:attribute name="count" type="Object"/>
+    <aura:attribute name="geojson" type="Object"/>
+    <aura:attribute name="selectedStateKey" type="Object"/>
+    <aura:attribute name="accounts" type="Account[]"/>
+    <aura:attribute name="showSpinner" type="boolean" default="false"/>
+    <aura:attribute name="legendItems" type="Object" />
+	<aura:attribute name="selectedLayer" type="Object" />
+
+	
+    <ltng:require styles="/resource/leaflet/leaflet.css"
+        		  scripts="{!join(',', '/resource/leaflet/leaflet-src.js', '/resource/countries_geojson')}"
+        		  afterScriptsLoaded="{!c.jsLoaded}" />
+        		        		  
+    
+    <aura:if isTrue="{!v.showSpinner}">
+    
+    <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+	
+    </aura:if>    
+    
+    <div id="map" aura:id="map" class="slds-card map"  ></div>
+
+</aura:component>

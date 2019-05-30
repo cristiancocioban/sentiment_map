@@ -1,0 +1,25 @@
+sfdx-out
+.classpath
+.DS_Store
+.sfdx
+.project
+.salesforce
+.vscode
+.idea
+.tern-project
+.settings
+selenium-client-jars/
+test/artifacts
+log.txt
+node_modules
+force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml
+force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml
+force-app/main/default/profiles/Admin.profile-meta.xml
+force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml
+force-app/main/default/layouts/Account-Account Layout.layout-meta.xml
+force-app/main/default/layouts/Account-Account %28Sales%29 Layout.layout-meta.xml
+force-app/main/default/layouts/Account-Account %28Support%29 Layout.layout-meta.xml
+force-app/main/default/layouts/Account-Account %28Marketing%29 Layout.layout-meta.xml
+/retrieved_package
+force-app/main/default/settings/Security.settings-meta.xml
+mdapi_output_dir

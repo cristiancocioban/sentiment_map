@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
+    <ltng:require styles="/resource/leaflet/leaflet.css"
+        		  scripts="/resource/leaflet/leaflet.js"/>
+        
+    <div id="map" aura:id="map" class="slds-card map"  ></div>
+</aura:component>

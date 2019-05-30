@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="The event holds one argument: the list of accounts">
+	<aura:attribute name="accounts" Type="Account[]"/>
+</aura:event>

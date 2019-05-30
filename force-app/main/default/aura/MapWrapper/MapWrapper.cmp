@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" controller="MapController" access="global">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:registerEvent name="MapWorldRegionEventType" type="c:MapWorldRegionEventType"/>
+	<aura:handler event="c:MapStateSelectedEventType" action="{!c.handleMapStateSelectedEvent}"/>
+
+
+
+
+	<aura:attribute name="settingsService" type="SettingsService"/>
+
+  <div class="slds-grid ">
+    <div class="slds-col slds-size_12-of-12 slds-card" style="margin-bottom: 10px;margin-right: 10px;min-height: 653px;">
+				<div class="" >
+					<c:Map />
+				</div>
+		</div>  
+	</div>
+	
+</aura:component>
