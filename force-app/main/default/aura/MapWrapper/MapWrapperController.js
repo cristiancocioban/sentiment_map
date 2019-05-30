@@ -4,15 +4,15 @@
 	},
 
 	loadWorld : function(component, event, helper) {
-        helper.loadWorld(component, event);		
+        	helper.loadWorld(component, event);		
 	},
 
 	loadUSA : function(component, event, helper) {
-        helper.loadUSA(component, event);
+        	helper.loadUSA(component, event);
 	},
 
 	handleMapStateSelectedEvent: function(component, event, helper) {		
-		helper.updateChartComponent(component, event);
+		//helper.updateChartComponent(component, event);
 		helper.loadMetrics(component, event);
 	},
 
